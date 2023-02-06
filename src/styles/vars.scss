@@ -1,3 +1,18 @@
-:root {
-  --primary-color: #fff;
+body,
+body.light {
+  color-scheme: light;
+  // Color
+  --primary-color: #f1f1f1;
+
+  // Text
+  --text-color: #333;
+}
+
+body.dark {
+  color-scheme: dark;
+  // Color
+  --primary-color: #282c34;
+
+  // Text
+  --text-color: #fff;
 }
