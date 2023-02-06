@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom/client'
 import './index.scss'
 import 'normalize.css'
 
-import App from './app'
+import Router from '@/router'
 
-const root = ReactDOM.createRoot(
+ReactDOM.createRoot(
   document.getElementById('root')!,
-)
-root.render(
+).render(
   <React.StrictMode>
-    <App />
+    <Router />
   </React.StrictMode>,
 )
