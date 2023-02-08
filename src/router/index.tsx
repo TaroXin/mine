@@ -1,17 +1,23 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
-import App from '@/pages/app/app'
-import Projects from '@/pages/projects'
+import App from '@/pages/app'
+import Project from '@/pages/projects'
 import Blog from '@/pages/blog'
+import Home from '@/pages/home'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <App/>,
     children: [
       {
-        path: 'projects',
-        element: <Projects />,
+        path: 'home',
+        element: <Home />,
+        index: true,
+      },
+      {
+        path: 'project',
+        element: <Project />,
       },
       {
         path: 'blog',
@@ -23,6 +29,6 @@ const router = createBrowserRouter([
   basename: '/mine',
 })
 
-export default function () {
-  return <RouterProvider router={router}/>
+export default function Router() {
+  return <RouterProvider router={router} />
 }

@@ -1,0 +1,12 @@
+.app {
+  background-color: var(--primary-background-color);
+  height: 100vh;
+  color: var(--text-color);
+
+  &-content {
+    margin: 0 auto;
+    width: 1080px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}

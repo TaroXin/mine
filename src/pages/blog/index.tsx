@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function () {
+export default function Blog() {
   const [count] = useState(0)
   const [message] = useState('this is test message')
 

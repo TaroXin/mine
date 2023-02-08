@@ -1,0 +1,42 @@
+.layout-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 1080px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--text-color);
+
+  &-avatar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__image {
+      height: 25px;
+      border-radius: 100%;
+      border: 2px solid var(--border-color);
+    }
+  }
+
+  &-menu {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    user-select: none;
+
+    &-item {
+      cursor: pointer;
+      text-align: center;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        color: var(--primary-color)
+      }
+    }
+  }
+}

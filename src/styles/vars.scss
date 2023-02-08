@@ -2,17 +2,29 @@ body,
 body.light {
   color-scheme: light;
   // Color
-  --primary-color: #f1f1f1;
+  --primary-color: #4E9DFB;
+
+  // Bg
+  --primary-background-color: #f1f1f1;
 
   // Text
   --text-color: #333;
+
+  // Border
+  --border-color: #19222E;
 }
 
 body.dark {
   color-scheme: dark;
   // Color
-  --primary-color: #282c34;
+  --primary-color: #4E9DFB;
+
+  // Bg
+  --primary-background-color: #282c34;
 
   // Text
   --text-color: #fff;
+
+  // Border
+  --border-color: #19222E;
 }
