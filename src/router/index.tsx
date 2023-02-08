@@ -19,8 +19,10 @@ const router = createBrowserRouter([
       },
     ],
   },
-])
+], {
+  basename: '/mine',
+})
 
 export default function () {
-  return <RouterProvider router={router} />
+  return <RouterProvider router={router}/>
 }
