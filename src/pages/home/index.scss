@@ -1,0 +1,37 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-avatar {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--border-color);
+  }
+
+  &-description {
+    text-align: center;
+
+    &-title {
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+
+  &-content {
+    margin-top: 20px;
+
+    &-title {
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    &-info {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 10px;
+    }
+  }
+}

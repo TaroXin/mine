@@ -17,10 +17,13 @@ export default function LayoutHeader() {
 
   return (
     <div className="layout-header">
-      <div className="layout-header-avatar">
-        <img src={headerImage} className="layout-header-avatar__image"/>
-        <span>TaroXin</span>
-      </div>
+      {
+        location.pathname != '/mine'
+        && <div className="layout-header-avatar">
+          <img src={headerImage} className="layout-header-avatar__image"/>
+          <span>TaroXin</span>
+        </div>
+      }
       <div className="layout-header-menu">
         <div className="layout-header-menu-item" onClick={() => navigate('/')}>
           Home
