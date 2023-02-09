@@ -22,7 +22,7 @@ export default function LayoutHeader() {
         <span>TaroXin</span>
       </div>
       <div className="layout-header-menu">
-        <div className="layout-header-menu-item" onClick={() => navigate('/home')}>
+        <div className="layout-header-menu-item" onClick={() => navigate('/')}>
           Home
         </div>
         <div className="layout-header-menu-item" onClick={() => navigate('/blog')}>
